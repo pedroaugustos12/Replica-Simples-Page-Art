@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Raleway", Arial, sans-serif;
+    margin: 0;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.principal{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FIM CONTAINER PRINCIPAL */
+
+
+
+.capeta header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 24px 16px;
+    background-color: #fff;
+}
+
+header a{
+    padding: 8px 16px;
+    color: black;
+    
+}
+
+header a:hover{
+    background-color: #c1c1c1;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+    /* IMAGENS */
+
+    .img-grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /* FIM-IMAGENS */
+
+
+/* FOOTER + FORM */
+
+footer{
+    background-color: #f1f1f1;
+    padding: 64px 0px ;
+    text-align: center;
+}
+footer h3{
+    margin: 45px 0px;
+}
+footer img{
+    width: 400px;
+    height: 400px;
+}
+
+footer form{
+    width: 60%;
+    margin: auto;
+}
+
+footer p{
+    font-size: 16px;
+    margin: 15px 0px;
+    padding-top: 40px;
+}
+form .form-control {
+    border-color: black; 
+}
+
+form .form-control:hover{
+    border-color: #000;
+}
+
+.cntt{
+    color: #ff0000ad;
+    font-size: 18px;
+    font-weight: 10%;
+}
+
+form .btn-primary{
+    width: 100%;
+    margin: auto;
+    background-color: #616161;
+}
+
+form .btn-primary:hover{
+    background-color: darkgray;
+}
+
+/* FIM FOOTER + FORM */
+
+
+.copy{
+    text-align: center;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+.copy a{
+    color: #000;
+    font-weight: 600;
+}
+
+.copy a:hover{
+    color: #000;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .principal {
+        padding: 0 32px;
+    }
+    
+    .img-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    }
+    
+    footer form {
+        width: 80%;
+    }
+
+    footer img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 830px) {
+    .principal {
+        padding: 0 16px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 16px 8px;
+    }
+
+    header a {
+        padding: 4px 8px;
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer p {
+        padding: 10px 10px;    
+    }
+
+    footer form {
+        width: 100%;
+    }
+
+    footer img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 18px;
+        padding: 12px 8px;
+    }
+
+    header a {
+        padding: 4px 8px;
+    }
+
+    footer form {
+        width: 95%;
+    }
+
+    footer img {
+        width: 70%;
+        height: auto;
+    }
+}
